@@ -39,7 +39,7 @@ class Song
   def self.alphabetical
     holder={}
     self.all.each do |song|
-      holder.unshift(song)
+      holder.push(song)
     end
     holder.sort
   end
