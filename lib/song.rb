@@ -37,11 +37,7 @@ class Song
   end
 
   def self.alphabetical
-    holder={}
-    self.all.each do |song|
-      holder.push(song)
-    end
-    holder.sort
+    self.all.sort 
   end
 
   def self.new_from_filename(filename)
